@@ -1,0 +1,101 @@
+/* Estilos personalizados */
+
+.section-title {
+    background-color: #1e40af;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+  }
+  .song-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  /*  
+    Estilos del modal
+  */
+
+  .cabecera-modal{
+    background-color: #2e4e74;
+  }
+
+
+  .btn-up{
+    background-color: #2e4e74;
+  }
+
+  .btn-qr{
+    background-color:rgb(255, 255, 255);
+  }
+
+  .text-Title{
+    color: rgb(102, 102, 102);
+  }
+
+
+  .song-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+
+
+  .hidden-content{
+    display: none;
+  }
+
+  /* Estilos personalizados para el botón */
+  .custom-button {
+    background-color: #2e4e74; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    font-weight: 600; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  .custom-button:hover {
+    background-color: #56595f; /* Cambia el color al pasar el mouse */
+  }
+
+/* Estilos personalizados para el loader */
+.loader {
+  border: 6px solid #f3f3f3; /* Color del borde */
+  border-top: 6px solid #2e4e74; /* Color del borde superior (azul) */
+  border-radius: 50%; /* Hace el loader circular */
+  width: 50px; /* Tamaño del loader */
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animación de rotación */
+}
+
+/* Animación de rotación */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Contenedor del loader */
+#loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el loader esté por encima de todo */
+}
+
+/* Contenido de la página (oculto inicialmente) */
+#content {
+  display: none; /* Oculta el contenido hasta que se cargue */
+}
